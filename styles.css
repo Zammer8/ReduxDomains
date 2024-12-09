@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    background: linear-gradient(135deg, #004d91, #00b4db);
+    font-family: Arial, sans-serif;
+    position: relative;
+  }
+  
+  #container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .dot {
+    position: absolute;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .dot img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .dot:hover {
+    transform: scale(1.2);
+  }
+  
+  #hover-box {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    pointer-events: none;
+  }
+  
+  #hover-box h3 {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  #hover-box p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
